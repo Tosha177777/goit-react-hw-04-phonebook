@@ -3,8 +3,8 @@ import { Formik, Form, Field } from 'formik';
 import { nanoid } from 'nanoid';
 
 const Contacts = ({ handleContact }) => {
-  const [name, setName] = useState('');
-  const [number, setNumber] = useState('');
+  const name = '';
+  const number = '';
 
   const handleSubmit = (values, { resetForm }) => {
     const { name } = values;
