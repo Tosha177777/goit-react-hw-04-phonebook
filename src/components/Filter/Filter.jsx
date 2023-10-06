@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
+const Filter = ({ filter, onFilterChange }) => {
+  return (
+    <>
+      <label htmlFor="findName">
+        Find contacts by name
+        <input
+          type="text"
+          name="filter"
+          value={filter}
+          onChange={onFilterChange}
+        />
+      </label>
+    </>
+  );
+};
 
-export default class Filter extends Component {
-  render() {
-    const { filter, onFilterChange } = this.props;
-    return (
-      <>
-        <label htmlFor="findName">
-          Find contacts by name
-          <input
-            type="text"
-            name="filter"
-            value={filter}
-            onChange={onFilterChange}
-          />
-        </label>
-      </>
-    );
-  }
-}
+export default Filter;
